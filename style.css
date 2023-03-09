@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.showcase {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 360px);
+}
+
+.showcase img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.showcase video {
+	width: 100%;
+	height: auto;
+}
+
+.profile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	width: 360px;
+	height: auto;
+}
+
+.image {
+	display: flex;
+	min-width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background: #0057ff;
+	margin-bottom: 10px;
+}
+
+.name {
+	color: #191919;
+	font-weight: 600;
+	font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.title {
+	color: dimgray;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.description {
+	color: dimgray;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 20px;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 5%;
+	margin: 30px 0;
+}
+
+.contact a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 40px;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 40px;
+	text-decoration: none;
+}
+
+.contact a:nth-child(1) {
+	color: #fff;
+	background: #0057ff;
+}
+
+.contact a:nth-child(2) {
+	color: #0057ff;
+	background: #dee8ff;
+}
+
+@media only screen and (max-width: 900px) {
+	main {
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: flex-start;
+	}
+
+	.profile {
+		position: relative;
+	}
+
+	.showcase {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.profile {
+		width: 100%;
+	}
+}
